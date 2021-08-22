@@ -43,11 +43,13 @@ Note: the delegation is between your domain name ("your_name.jiangrendevops.com"
 ![Alt text](images/DNS9.png?raw=true)
 You should get a successful result.
 ![Alt text](images/DNS11.png?raw=true)
-8. After a minute, you will find your certificate is issued.
+8. After a few minutes, you will find your certificate is issued.
 ![Alt text](images/DNS12.png?raw=true)
-9. Go back to the CDN distribution edit page and select the certification that you just created.
+9. Go back to the CDN distribution edit page and do following
+- In "Custom SSL certificate", select the certification that you just created.
+- In "Alternate domain name", put in your domain name "your_name.jiangrendevops.com".
 ![Alt text](images/DNS13.png?raw=true)
-10. Click "Yes, Edit" in the bottom right to save it. It should take 10 minutes or so to apply cloudfront changes to all the edge servers.
+10. Click "Save changes" in the bottom right to save it. It should take 10 minutes or so to apply cloudfront changes to all the edge servers.
 ![Alt text](images/DNS14.png?raw=true)
 11.You should be able to view your site in https
 ![Alt text](images/DNS17.png?raw=true)
