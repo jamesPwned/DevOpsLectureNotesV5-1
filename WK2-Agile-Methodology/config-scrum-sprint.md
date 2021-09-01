@@ -24,7 +24,7 @@ Create some issues/tasks/bug tickets in the backlog
 ![Alt text](images/createissue.png?raw=true)
 
 （Optional） Create epics user stories， Epics are normally used to represent a chunks of work. 
-And link issues you created just now to the Epics. 
+
 ![Alt text](images/epic.png?raw=true)
 Below is an example how you can structure and break down work/feature.
 
@@ -41,7 +41,9 @@ Shopping Cart
 *   Add to basket
 *   Remove from basket
 *   Apply voucher
-![Alt text](images/image5.png?raw=true)
+
+And there are a few ways to link issues you created to the Epics. 
+![Alt text](images/link.png?raw=true)
 
 Step 3: Create a sprint
 ![Alt text](images/CreateSprint.png?raw=true)
