@@ -17,15 +17,25 @@ Choose team managed for an easier experience. You can take a look at the differe
 Complete creating project by entering a project name.
 ![Alt text](images/createname.png?raw=true)
 
-Step 2: Create epics user stories or tasks in the backlog
+
+
+Step 2.1: 
+Create some issues/tasks/bug tickets in the backlog
+![Alt text](images/createissue.png?raw=true)
+
+（Optional） Create epics user stories， Epics are normally used to represent a chunks of work. 
+And link issues you created just now to the Epics. 
+![Alt text](images/epic.png?raw=true)
+Below is an example how you can structure and break down work/feature.
+
 Product Catalogue
-*   Listing view
+* Listing view
     * Frontend component
     * Intergrate with exsiting listing API
     * Testing    
-*   Detail view
-*   Compare items
-*   Add to Favorites
+* Detail view
+    * Compare items
+    * Add to Favorites
     
 Shopping Cart
 *   Add to basket
