@@ -205,12 +205,12 @@ choose a VPC, click Public IP address and us-east-1a -> Save:
 ![Alt text](../images/VPC_setup.png?raw=true)
 
 now, create the app, and you will see something like this:
-![Alt text](images/Create_app_1.png?raw=true)
-![Alt text](images/Create_app_2.png?raw=true)
-![Alt text](images/Create_app_health_ok.png?raw=true)
+![Alt text](../images/Create_app_1.png?raw=true)
+![Alt text](../images/Create_app_2.png?raw=true)
+![Alt text](../images/Create_app_health_ok.png?raw=true)
 
 But you could also see:
-![Alt text](images/Create_app_health_problem.png?raw=true)
+![Alt text](../images/Create_app_health_problem.png?raw=true)
 Don't worry about it for now, we will come back later. 
 
 ## 6. Set up IAM user
@@ -319,7 +319,7 @@ If everything goes well, you will see
 ![Alt text](../images/ci_success.png)
 
 On the AWS console, you will see
-![Alt text](images/Create_app_result.png?raw=true)
+![Alt text](../images/Create_app_result.png?raw=true)
 
 and open the link that is shown on your AWS Elasticbeanstalk -> applications window:
 ![Alt text](../images/Result.png?raw=true)
