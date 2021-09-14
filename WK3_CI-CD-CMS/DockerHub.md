@@ -23,14 +23,21 @@ You want to config usernameVariable/passwordVariable in jenkins
 ![Alt text](images/pipeline.png?raw=true)
 
 ``` 
-stage('Push Docker image') {
+podTemplate(
+        containers: [containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true)],
+        volumes: [hostPathVolume(hostPath: '/var/run/docker.sock', mountPath: '/var/run/docker.sock')]
+  ) {
+    stage('Push Docker image') {
     withCredentials([usernamePassword(credentialsId: 'docker-hub', usernameVariable: 'USER', passwordVariable: 'PASSWD')]) {
     container('docker') {
         sh "docker login --username ${USER} --password ${PASSWD}"
         sh "docker push ${image}"
     }
     }
-}
+ }
+}  
+
+
 ```
 More info about credentials-binding plugin
 https://www.jenkins.io/doc/pipeline/steps/credentials-binding/
