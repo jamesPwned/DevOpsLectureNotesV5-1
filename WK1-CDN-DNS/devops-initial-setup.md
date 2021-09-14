@@ -38,13 +38,44 @@ https://www.atlassian.com/git/tutorials/install-git
 https://docs.docker.com/get-docker/
 
 ## Python Local Environment Setup
-Install virtualenv
-https://pypi.org/project/virtualenv/
 
-Activate your virtualenv
-https://gist.github.com/pandafulmanda/730a9355e088a9970b18275cb9eadef3
+### Create your python virtual Environment
 
-Add the environment activate command to your shell init file e.g. ~/.bashrc or ~/.zshrc
+##### Requirements
+* Python 3
+* Pip 3
+
+```bash
+$ brew install python@3.8
+```
+
+Pip3 is installed with Python3
+
+##### Installation
+To install virtualenv via pip run:
+```bash
+$ pip3 install virtualenv
+```
+
+##### Usage
+Creation of virtualenv:
+```bash
+$ virtualenv -p python3 <desired-path>
+```
+
+Activate the virtualenv:
+```bash
+$ source <desired-path>/bin/activate
+```
+
+Deactivate the virtualenv:
+```bash
+$ deactivate
+```
+
+Optional: Add the environment activate command to your shell init file e.g. ~/.bashrc or ~/.zshrc
+
+Reference: https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-virtualenv-with-Python-3
 
 ## ZSH
 https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
