@@ -97,6 +97,23 @@ You will need to update the `Jenkinsfile` and files under `deployment` folder ac
 ![Alt text](images/testurl.png?raw=true)
 ![Alt text](images/prefix.png?raw=true)
 
+Lastly dont forget to update image name used under https://github.com/JiangRenDevOps/jrcms/tree/master/deployment to match your image:
+
+```
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "davisliu/jrcms:TAG",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8080"
+    }
+  ]
+}
+```
+
 
 ## Task #6: Setup Github integration
 
