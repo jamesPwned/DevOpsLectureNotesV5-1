@@ -137,3 +137,7 @@ dmypy.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+
+.terraform*
+**/terraform.tfstate
