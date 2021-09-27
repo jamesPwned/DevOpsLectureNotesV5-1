@@ -1,17 +1,4 @@
 ---
-
-
-# - hosts: all
-#   become: yes
-#   become_user: root
-#   user: ubuntu
-#   vars:
-#     pip_install_packages:
-#       - name: docker
-#   roles:
-#     - geerlingguy.docker
-#     - geerlingguy.pip
-
 - hosts: tag_redis
   become: yes
   become_user: root
@@ -21,6 +8,7 @@
       apt:
         name: redis
         update_cache: yes
+    # what if we delete the start config after start, is it started or not
     - name: Start service redis, if not started
       service:
         name: redis
