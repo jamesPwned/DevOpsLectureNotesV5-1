@@ -7,6 +7,7 @@ RUN set -e; \
 		libc-dev \
 		linux-headers \
 	; \
+	pip install --upgrade pip; \
 	pip install -r requirements.txt; \
 	apk del .build-deps;
 EXPOSE 5000
