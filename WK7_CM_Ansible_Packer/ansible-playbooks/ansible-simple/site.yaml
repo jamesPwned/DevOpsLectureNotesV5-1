@@ -13,8 +13,9 @@
       service:
         name: redis
         state: started
-    # - name: Stop service redis
-    #   service:
-    #     name: redis
-    #     state: stopped
+
+    - name: Stop service redis
+      service:
+        name: redis
+        state: stopped
 
