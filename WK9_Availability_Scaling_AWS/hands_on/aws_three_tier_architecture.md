@@ -151,6 +151,8 @@ use the template in `./hands_on/CFN-multi-tier-app.yaml`
   You should be able to see
 ![Alt text](../images/multi-tier/welcom-msg.png?raw=true)
 
+- Remove `multi-tier-ec2-sg` from the web EC2 instances to that they are not open to the public.
+
 - Access the app server in the browser
 
   Since we have installed Tomcat in the app server, can you access to
